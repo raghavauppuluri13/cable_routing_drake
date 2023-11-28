@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "cable-routing"
+version = "0.1.0"
+description = ""
+authors = ["Raghava Uppuluri <raghava.upp13@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+drake = "^1.23.0"
+ipython = "^8.18.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
