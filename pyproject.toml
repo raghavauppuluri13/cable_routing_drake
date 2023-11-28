@@ -4,12 +4,13 @@ version = "0.1.0"
 description = ""
 authors = ["Raghava Uppuluri <raghava.upp13@gmail.com>"]
 license = "MIT"
-readme = "README.md"
+readme = "readme.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
 drake = "^1.23.0"
 ipython = "^8.18.1"
+numpy = "^1.24.2"
 
 
 [build-system]

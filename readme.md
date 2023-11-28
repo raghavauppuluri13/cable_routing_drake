@@ -4,10 +4,20 @@
 
 - [poetry](https://python-poetry.org/docs)
 - [drake](https://drake.mit.edu/)
+- [git lfs](https://git-lfs.github.com/) - for meshes
 
 ### Quick Start
+1. Clone repo with submodules and get LFS files
 
-1. Install dependencies
+```
+# clone
+git clone https://github.com/raghavauppuluri/cable_routing_drake.git --recurse-submodules
+git lfs install
+git lfs fetch
+git lfs pull
+```
+
+2. Install dependencies
 ```
 poetry install
 ```

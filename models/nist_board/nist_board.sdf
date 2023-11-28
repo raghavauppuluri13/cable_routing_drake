@@ -6,7 +6,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://cable_routing/models/nist_board/nist_board.obj</uri>
+            <uri>package://nist_board/nist_board.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -15,7 +15,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>package://cable_routing/models/nist_board/nist_board-2.obj</uri>
+            <uri>package://nist_board/nist_board-2.obj</uri>
           </mesh>
         </geometry>
         <surface>

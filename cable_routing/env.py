@@ -58,7 +58,14 @@ def load_assembly_task():
     parser = Parser(plant, scene_graph)
     parser.SetAutoRenaming(True)
     package_map = parser.package_map()
-    package_map.Add("cable_routing", str(Path("../").absolute()))
+
+    # get module path
+    model_path = Path(__file__).absolute().parent.parent / "models"
+
+    package_map.Add("ur5e_description", str(model_path / "ur5e_description"))
+    package_map.Add("wedge_gripper", str(model_path / "wedge_gripper"))
+    package_map.Add("nist_board", str(model_path / "nist_board"))
+
     parser.AddModelsFromString(robot_directives, ".dmd.yaml")
     parser.AddModelsFromString(environment_directives, ".dmd.yaml")
 

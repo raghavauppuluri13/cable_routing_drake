@@ -2,7 +2,7 @@ robot_directives = """
 directives:
 - add_model:
     name: ur5e
-    file: package://cable_routing/models/ur5e_description/urdf/ur5e.sdf
+    file: package://ur5e_description/urdf/ur5e.sdf
     default_joint_positions:
         shoulder_pan_joint: [0]
         shoulder_lift_joint: [-1.54]
@@ -12,7 +12,7 @@ directives:
         wrist_3_joint: [0]
 - add_model:
     name: wedge
-    file: package://cable_routing/models/wedge.sdf
+    file: package://wedge_gripper/wedge.sdf
 - add_weld:
     parent: ur5e::wrist_3_link
     child: wedge::wedge_root
@@ -45,7 +45,7 @@ directives:
         translation: [0.75, 0, -0.8645]
 - add_model:
     name: nist_board
-    file: package://cable_routing/models/nist_board/nist_board.sdf
+    file: package://nist_board/nist_board.sdf
 - add_weld:
     parent: world
     child: nist_board::nist_root
